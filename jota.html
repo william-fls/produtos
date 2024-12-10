@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo LocalStorage</title>
+    <link rel="stylesheet" href="jotac.css">
+</head>
+<body>
+    <h1>Lista de Produtos</h1>
+    
+    <div class="input-container">
+        <input type="text" id="produto" placeholder="Adicionar produto">
+    </div>
+
+    <div class="input-container">
+        <input type="text" id="imagemUrl" placeholder="Adicionar URL da imagem" oninput="mostrarImagem()">
+    </div>
+    
+    <div class="botoes-acoes">
+        <button onclick="adicionarProduto()">Adicionar</button>
+        <button onclick="removerTodosProdutos()">Remover Todos os Produtos</button>
+    </div>
+    
+    <div id="imagemPreview" style="margin-top: 10px;">
+        <img id="preview" src="" alt="Imagem Preview" style="display: none; width: 50px; height: 50px;"/>
+    </div>
+    
+    <ul id="listaProdutos"></ul>
+    
+    <script src="jotas.js"></script>
+</body>
+</html>

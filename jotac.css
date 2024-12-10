@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.botoes-acoes {
+    display: flex;
+    gap: 10px; /* Espaço entre os botões */
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex: 1;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 350px;
+    margin-top: 20px;
+}
+
+li {
+    background-color: #fff;
+    padding: 15px; /* Aumenta o padding para dar mais espaço */
+    margin-bottom: 10px; /* Aumenta o espaço entre os itens da lista */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Mantém os itens alinhados à esquerda */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+}
+
+li img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px; /* Aumenta o espaço entre a imagem e o texto */
+}
+
+li button {
+    background-color: #dc3545;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-left: 5px; /* Espaço entre os botões */
+}
+
+li button:hover {
+    background-color: #c82333;
+}
+
+/* Estilo específico para o botão de Compra */
+li button[onclick*="comprarProduto"] {
+    background-color: #28a745;
+}
+
+li button[onclick*="comprarProduto"]:hover {
+    background-color: #218838;
+}
+
+/* Estilo para o botão de "Remover Todos os Produtos" */
+.botoes-acoes button[onclick="removerTodosProdutos()"] {
+    background-color: #ff4444; /* Cor vermelha */
+}
+
+.botoes-acoes button[onclick="removerTodosProdutos()"]:hover {
+    background-color: #cc0000; /* Cor vermelha mais escura ao passar o mouse */
+}
+
+button:active {
+    transform: scale(0.95);
+    transition: transform 0.1s;
+}
+li img {
+    width: 50px;           /* Largura da imagem */
+    height: 50px;          /* Altura da imagem */
+    border-radius: 5px;    /* Bordas arredondadas */
+    margin-right: 10px;    /* Espaço à direita da imagem */
+    object-fit: cover;      /* Ajusta a imagem ao espaço definido sem distorção */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+li {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinhamento para a esquerda */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
